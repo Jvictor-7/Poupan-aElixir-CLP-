@@ -65,7 +65,7 @@ defmodule Poupanca do
         #Salvando o recebimento em "transacoes.txt" através do modulo de Transacao
         Transacao.gravar("Recebimento/Saque", conta_poupanca.usuario.email, valor_retirado, Date.utc_today())
         File.write(@contas, :erlang.term_to_binary(contas))
-        {:ok, conta_poupanca, "mensagem de email enc  aminhada!"}
+        {:ok, conta_poupanca, "mensagem de email encaminhada!"}
     end
   end
 
